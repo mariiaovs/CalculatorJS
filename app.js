@@ -50,8 +50,8 @@ function printResult (result) {
 }
 
 function getResult (inp1, inp2, actionType) {
-    let num1 = Number(inp1.value);
-    let num2 = Number(inp2.value);
+    let num1 = +inp1.value;
+    let num2 = +inp2.value;
     if (actionType == '+') {
         return num1 + num2;              
     }

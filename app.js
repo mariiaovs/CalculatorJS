@@ -50,24 +50,24 @@ function printResult (result) {
 }
 
 function getResult (inp1, inp2, actionType) {
-    let inp1 = Number(inp1.value);
-    let inp2 = Number(inp2.value);
+    let num1 = Number(inp1.value);
+    let num2 = Number(inp2.value);
     if (actionType == '+') {
-        return inp1 + inp2;              
+        return num1 + num2;              
     }
     else if (actionType == '-') {
-        return inp1 - inp2;               
+        return num1 - num2;               
     }
     else if (actionType == '*') {
-        return inp1 * inp2;                 
+        return num1 * num2;                 
     }
     else if (actionType == '/') {
-        return inp1 / inp2;          
+        return num1 / num2;          
     }
 }
 
 submitBtn.onclick = function () {
-    let result = getResult (input1, input2, action);
+    const result = getResult (input1, input2, action);
     printResult (result);
     
     /* switch (action) {

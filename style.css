@@ -11,11 +11,14 @@ body {
 .container {
     width: 300px;
     text-align: center;
+    margin-top: 20px;
 }
 
 h1 {
     font-size: 40px;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: blue;
 }
 
 input {
@@ -52,13 +55,23 @@ button.btn-outline-info {
 }
 
 
-div.text-bg-light {
+.result {
     border-radius: 5px;
     background-color: white;
     width: 200px;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 5px;
 }
 
 #result {
     color: green;
+    font-size: 30px;
+    font-weight: 700;
 }
+
+.result-block h4 {
+    font-size: 30px;
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}
+
